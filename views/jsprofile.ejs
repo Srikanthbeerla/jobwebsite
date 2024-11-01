@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Seeker Profile</title>
+</head>
+<body>
+  <h2>Job Seeker Profile</h2>
+  <form id="profileForm" action="/modify-profile" method="post">
+    <label for="fullName">Full Name:</label><br>
+    <input type="text" id="fullName" name="full_name"  pattern="[A-Za-z ]+"><br>
+    <label for="fatherName">Father's Name:</label><br>
+    <input type="text" id="fatherName" name="father_name" pattern="[A-Za-z ]+"><br>
+    <label for="gender">Gender:</label><br>
+    <input type="text" id="gender" name="gender"><br>
+    <label for="dateOfBirth">Date of Birth:</label><br>
+    <input type="date" id="dateOfBirth" name="date_of_birth"><br>
+    <label for="qualification">Qualification:</label><br>
+    <input type="text" id="qualification" name="qualification" pattern="[A-Za-z ]+"><br>
+    <label for="skills">Skills:</label><br>
+    <input type="text" id="skills" name="skills"><br>
+    <label for="contactNumber">Contact Number:</label><br>
+    <input type="text" id="contactNumber" name="contact_number"   pattern="[0-9]{10}"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <input type="hidden" id="username" name="username" value="job_seeker_username">
+    <input type="submit" value="Update Profile">
+  </form>
+</body>
+</html>

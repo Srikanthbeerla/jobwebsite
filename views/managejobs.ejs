@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posted Jobs</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h2>post  Job</h2>
+    <form id="manageJobsForm" action="/submit-job" method="post">
+      <div class="form-group">
+        <label for="jobTitle">Job Title:</label>
+        <input type="text" class="form-control" id="jobTitle" name="job_title" required pattern="[A-Za-z ]+">
+      </div>
+      <div class="form-group">
+        <label for="totalVacancy">Total Vacancy:</label>
+        <input type="number" class="form-control" id="totalVacancy" name="total_vacancy" required   pattern="[0-9]{10}">
+      </div>
+      <div class="form-group">
+        <label for="salary">Salary:</label>
+        <input type="text" class="form-control" id="salary" name="salary" required>
+      </div>
+      <div class="form-group">
+        <label for="qualification">Qualification:</label>
+        <input type="text" class="form-control" id="qualification" name="qualification" required pattern="[A-Za-z,=-_+.]+">
+      </div>
+      <div class="form-group">
+        <label for="skills">Skills:</label>
+        <input type="text" class="form-control" id="skills" name="skills" required pattern="[A-Za-z ,.=+]+">
+      </div>    
+    <button type="submit" class="btn btn-primary">Submit Job</button>
+    <a href="/views/Employer-dashboard.ejs" class="btn btn-primary">Back</a>
+    </form>
+  </div>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Seeker Registration</title>
+</head>
+<body>
+  <h2>Job Seeker Registration</h2>
+  <form id="registerForm" action="/register" method="post">
+    <label for="fullName">Full Name:</label><br>
+    <input type="text" id="fullName" name="full_name" required pattern="[A-Za-z ]+"><br>
+    <div>
+      <label for="fatherName">Father Name:</label><br>
+      <input type="text" id="fatherName" name="father_name" required pattern="[A-Za-z ]+"><br>
+    </div>
+    <label for="gender">Gender:</label><br>
+    <select id="gender" name="gender" required>
+      <option value="">Select</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select><br>
+    <label for="dateOfBirth">Date of Birth:</label><br>
+    <input type="date" id="dateOfBirth" name="date_of_birth" required><br>
+    <label for="qualification">Qualification:</label><br>
+    <input type="text" id="qualification" name="qualification" pattern="[A-Za-z .,=+_-]+"><br>
+    <label for="skills">Skills:</label><br>
+    <input type="text" id="skills" name="skills"  pattern="[A-Za-z.,=+-_- ]+"   ><br>
+    <div>
+    <label for="contactNumber">Contact Number:</label><br>
+    <input type="integer" id="contactNumber" name="contact_number" required   pattern="[0-9]{10}"><br>
+    <small>Enter a 10-digit contact number.</small>
+    </div>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+  
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" required><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+    <input type="submit"  id= "submitButton" value="Register" >
+    <a href="/views/jslogin.ejs" class="btn btn-primary">Back</a>
+  </form>
+  
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>applications</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+  
+        <h2>applications</h2>
+     <table class="table">
+      
+        <tr>
+          <th>fullName</th>
+          <th>father</th>
+          <th>dob</th>
+          <th>Gender</th>
+          <th>Resume</th>
+          <th>Email</th>
+          <th>Contact</th>
+          <th>Address</th>
+          <% res1.forEach(function (applications){ %> 
+        </tr>
+            <td><%= applications.fullname %></td>
+            <td><%= applications.fathername %></td>
+            <td><%= applications.dob %></td>
+            <td><%= applications.gender %></td>
+            <td><a href="/views/download.ejs"> view resume</a></td>
+            <td><%= applications.email %></td>
+            <td><%= applications.contactnumber %></td>
+            <td><%= applications.address %></td>
+            <% }); %>
+     </table>
+     <a href="/views/Employer-dashboard.ejs" class="btn btn-primary">Back</a>
+  </div>
+     <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </div>
+</body>
+</html>

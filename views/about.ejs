@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Portal</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom styles */
+    .navbar-custom {
+      background-color: #4CAF50; /* Green */
+    }
+    .navbar-custom .nav-link {
+      color: #ffffff !important; /* White */
+    }
+    .navbar-custom .nav-link:hover {
+      color: #ffcc00 !important; /* Yellow */
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+  <a class="navbar-brand" href="#">
+  <img src="/Employer/image/images.png" width="30" height="30" alt="">Job Portal</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/views/index.ejs">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/views/about.ejs">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/views/jslogin.ejs">jobseeker</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/views/emplogin.ejs">Employers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/views/admin-login.ejs">Admin</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/views/contact.ejs">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Page content -->
+<div class="container">
+    <h1>About Us</h1>
+    <p>Welcome to our job portal! We aim to connect job seekers with employers in an efficient and effective manner.
+     Our platform provides a user-friendly interface for both employers and job seekers to post and search for jobs, respectively.<!---- With advanced search filters and a robust database, finding the perfect job or candidate has never been easier.-->
+    Whether you're looking to hire top talent or take the next step in your career, our job portal is here to help.</p>
+  </div>
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Job Portal</p>
+      <img class="img-responsive" src="/Employer/image/slide3.jpg" alt="banner-4" width="1200" height="300"> 
+
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="public/js/script.js"></script>
+</body>
+</html>

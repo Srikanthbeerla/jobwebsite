@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employer Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom styles for employer dashboard */
+    .sidebar {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 20px;
+      background-color: #343a40; /* Dark background color */
+      color: #fff; /* Text color */
+    }
+    .sidebar-heading {
+      padding: 10px 20px;
+      font-size: 1.2rem;
+    }
+    .list-group-item {
+      background-color: #343a40;
+      border-color: #343a40;
+      color: #fff;
+    }
+    .list-group-item:hover {
+      background-color: #495057; /* Darker background color on hover */
+    }
+    .list-group-item.active {
+      background-color: #007bff; /* Active link color */
+      border-color: #007bff;
+    }
+    .content {
+      margin-left: 250px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h4 class="sidebar-heading text-center mb-4"> Employer-Dashboard</h4>
+    <div class="list-group list-group-flush">
+      <a href="/views/managejobs.ejs" class="list-group-item list-group-item-action bg-dark">Posted Job</a>
+      <a href="/views/postedjobs.ejs" class="list-group-item list-group-item-action bg-dark">manage Jobs </a>
+      <a href="/views/application.ejs" class="list-group-item list-group-item-action bg-dark">Applications</a>
+      <!--<a href="#" class="list-group-item list-group-item-action bg-dark">Wakin</a>-->
+      <a href="/views/emplogout.ejs" class="list-group-item list-group-item-action bg-dark">Logout</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <!-- Page content goes here -->
+    <h1>Welcome to Employer Dashboard</h1>
+    <!-- Example content -->
+   
+    <img class="img-responsive" src="/Employer/image/slide3.jpg" alt="slide2" width="1000" height="500"> 
+  </div>
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
